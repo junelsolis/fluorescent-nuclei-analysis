@@ -1,11 +1,11 @@
 import os
-import argparse
 from glob import glob
 from tqdm import tqdm
 from skimage import io
 from stardist.models import StarDist2D
 from csbdeep.utils import normalize
 import numpy as np
+from analyze import nuclear_morphology
 
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "u20s-data")
@@ -35,6 +35,8 @@ def main():
             labels.astype(np.uint32),  # type: ignore
             check_contrast=False,
         )
+
+    nuclear_morphology()
 
 
 if __name__ == "__main__":
