@@ -13,7 +13,7 @@ While digital image processing using common filters, edge detectors, and other c
 ![image](https://github.com/user-attachments/assets/926dbcd4-8cea-48fd-a9a3-d1e17cd3e233)
 
 ## Data analysis
-Now that the nuclei have been segmented, the label images can be read and constructed into a tabular format, in this case, a Polars DataFrame. The first 10 lines of this data can be seen below, including columns for area, aspect ratio, perimeter and solidity, for each individual detected cell nucleus.
+Now that the nuclei have been segmented, the label images can be read and constructed into a tabular format, in this case, a Polars DataFrame. The first 10 lines of this data can be seen in the table below, including columns for area, aspect ratio, perimeter and solidity, for each individual detected cell nucleus. It is important to note that for each label image, nuclei touching the image border were excluded because these would adversely affect the aforementioned morphological measurements.
 ```
 ┌─────────────────────────────────┬────────────────┬───────┬────────┬──────────────┬────────────┬──────────┐
 │ filename                        ┆ img_total_area ┆ label ┆ area   ┆ aspect_ratio ┆ perimeter  ┆ solidity │
