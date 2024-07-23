@@ -1,5 +1,5 @@
 # Fluorescent nuclei image analysis
-Detecting and segmenting nuclei in fluorescence microscopy images is a very common and important workflow, allowing for counting nuclei, measuring cell density in a tissue, and quantifying nuclear morphology. This repository is a demonstration of a nuclear segmentation using pre-trained artificial intelligence models, conversion to data tabular data, and subsequent data analysis.
+Detecting and segmenting nuclei in fluorescence microscopy images is a very common and important workflow, allowing for counting nuclei, measuring cell density in a tissue, and quantifying nuclear morphology. This repository is a demonstration of a nuclear segmentation workflow using pre-trained artificial intelligence models, conversion to data tabular data, and subsequent data analysis.
 
 ## Raw data
 The raw data consists of 200 16-bit TIFF images from U2OS cells, each with a field of view containing numerous nuclei. Each image represents the DNA channel and shows Hoechst-stained nuclei. Six sample images from the dataset are shown below. Each bright blob is a single cell nucleus.
@@ -7,8 +7,13 @@ The raw data consists of 200 16-bit TIFF images from U2OS cells, each with a fie
 ![image](https://github.com/user-attachments/assets/a8b3a4d7-214c-4d00-afe1-9e865ddb7447)
 
 ## Nuclear segmentation
-While digital image processing using common filters, edge detectors, and other classic algorithms can be used for segmentation, one StarDist's pre-trained models is able to very quickly and accurately produce nuclei labels.
+While digital image processing using common filters, edge detectors, and other classic algorithms can be used for segmentation, one of the StarDist pre-trained models is able to very quickly and accurately produce nuclei labels. As seen in the two example pairs below (left - raw data; right - AI prediction), the segmentation accuracy is very high.
 
+![image](https://github.com/user-attachments/assets/fbcad6ab-513b-4a26-9a9e-502767f8ed41)  
+![image](https://github.com/user-attachments/assets/926dbcd4-8cea-48fd-a9a3-d1e17cd3e233)
+
+## Data analysis
+Now that the nuclei have been segmented, the label images can be read and constructed into a tabular format, in this case, a Polars DataFrame. The first 10 lines of this data can be seen below, including columns for area, aspect ratio, perimeter and solidity, for each individual detected cell nucleus.
 ```
 ┌─────────────────────────────────┬────────────────┬───────┬────────┬──────────────┬────────────┬──────────┐
 │ filename                        ┆ img_total_area ┆ label ┆ area   ┆ aspect_ratio ┆ perimeter  ┆ solidity │
