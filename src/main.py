@@ -5,7 +5,7 @@ from skimage import io
 from stardist.models import StarDist2D
 from csbdeep.utils import normalize
 import numpy as np
-from analyze import nuclear_morphology
+from analyze import nuclear_morphology, make_figures
 
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "u20s-data")
@@ -37,6 +37,7 @@ def main():
         )
 
     nuclear_morphology()
+    make_figures()
 
 
 if __name__ == "__main__":
