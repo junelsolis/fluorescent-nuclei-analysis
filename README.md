@@ -1,6 +1,14 @@
 # Fluorescent nuclei image analysis
 Detecting and segmenting nuclei in fluorescence microscopy images is a very common and important workflow, allowing for counting nuclei, measuring cell density in a tissue, and quantifying nuclear morphology. This repository is a demonstration of a nuclear segmentation using pre-trained artificial intelligence models, conversion to data tabular data, and subsequent data analysis.
 
+## Raw data
+The raw data consists of 200 16-bit TIFF images from U2OS cells, each with a field of view containing numerous nuclei. Each image represents the DNA channel and shows Hoechst-stained nuclei. Six sample images from the dataset are shown below. Each bright blob is a single cell nucleus.
+
+![image](https://github.com/user-attachments/assets/a8b3a4d7-214c-4d00-afe1-9e865ddb7447)
+
+## Nuclear segmentation
+While digital image processing using common filters, edge detectors, and other classic algorithms can be used for segmentation, one StarDist's pre-trained models is able to very quickly and accurately produce nuclei labels.
+
 ```
 ┌─────────────────────────────────┬────────────────┬───────┬────────┬──────────────┬────────────┬──────────┐
 │ filename                        ┆ img_total_area ┆ label ┆ area   ┆ aspect_ratio ┆ perimeter  ┆ solidity │
