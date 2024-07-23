@@ -1,0 +1,12 @@
+name: fluorescent-nuclei-analysis
+channels:
+- conda-forge
+dependencies:
+- dask=2024.7.1
+- python=3.10
+- scikit-image=0.24
+- tqdm
+- pip:
+  - stardist==0.9.1
+  - tensorflow
+
