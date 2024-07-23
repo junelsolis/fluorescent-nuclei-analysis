@@ -35,8 +35,6 @@ Now that the nuclei have been segmented, the label images can be read and constr
 └─────────────────────────────────┴────────────────┴───────┴────────┴──────────────┴────────────┴──────────┘
 ```
 The data distributions for nuclear area, aspect ratio, and solidity are shown below. This dataset contains no experimental groupings.  
+![Nuclear morphology](https://github.com/user-attachments/assets/1d7df4e8-63e8-4d08-8c63-c73606ca7409)
 
-<img src='https://github.com/user-attachments/assets/06115dfa-a5b8-4aec-8902-72196177b1e3' style="margin: auto; width: 50%;">
-<img src='https://github.com/user-attachments/assets/30a557e3-633d-47e0-a499-6f3bcbfc7bc6' style="margin: auto; width: 50%;">
-<img src='https://github.com/user-attachments/assets/9bcfd098-c8e9-41db-86d5-7766e94a5231' style="margin: auto; width: 50%;">
 
