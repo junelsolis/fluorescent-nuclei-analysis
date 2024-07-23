@@ -1,4 +1,5 @@
-# fluorescent-nuclei-analysis
+# Fluorescent nuclei image analysis
+Detecting and segmenting nuclei in fluorescence microscopy images is a very common and important workflow, allowing for counting nuclei, measuring cell density in a tissue, and quantifying nuclear morphology. This repository is a demonstration of a nuclear segmentation using pre-trained artificial intelligence models, conversion to data tabular data, and subsequent data analysis.
 
 ```
 ┌─────────────────────────────────┬────────────────┬───────┬────────┬──────────────┬────────────┬──────────┐
