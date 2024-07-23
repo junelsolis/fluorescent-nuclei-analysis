@@ -1,3 +1,5 @@
+<img src='https://github.com/user-attachments/assets/fbcad6ab-513b-4a26-9a9e-502767f8ed41' style='height: 75px; width: auto;'>  
+
 # Fluorescent nuclei image analysis
 Detecting and segmenting nuclei in fluorescence microscopy images is a very common and important workflow, allowing for counting nuclei, measuring cell density in a tissue, and quantifying nuclear morphology. This repository is a demonstration of a nuclear segmentation workflow using pre-trained artificial intelligence models, conversion to data tabular data, and subsequent data analysis.
 
