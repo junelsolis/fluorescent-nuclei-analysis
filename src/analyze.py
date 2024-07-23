@@ -52,7 +52,6 @@ def nuclear_morphology(data_dir: str = DATA_DIR):
 def make_figures(data_dir: str = DATA_DIR):
     df = pl.read_csv(os.path.join(DATA_DIR, "nuclear_morphology.csv"))
     print(df.head(10))
-    df = df.to_pandas()
 
     sns.set_theme(style="whitegrid")
     sns.boxplot(
@@ -60,13 +59,15 @@ def make_figures(data_dir: str = DATA_DIR):
     ).set_xlabel("area (px)")
     plt.savefig(os.path.join(DATA_DIR, "area_boxplot.png"), dpi=300)
 
+    plt.clf()
     sns.boxplot(
-        x=df["aspect_ratio"], showfliers=False, color=sns.color_palette("pastel")[0]
+        x=df["aspect_ratio"], showfliers=False, color=sns.color_palette("pastel")[1]
     ).set_xlabel("aspect ratio")
     plt.savefig(os.path.join(DATA_DIR, "aspect_ratio_boxplot.png"), dpi=300)
 
+    plt.clf()
     sns.boxplot(
-        x=df["solidity"], showfliers=False, color=sns.color_palette("pastel")[0]
+        x=df["solidity"], showfliers=False, color=sns.color_palette("pastel")[2]
     ).set_xlabel("solidity")
     plt.savefig(os.path.join(DATA_DIR, "solidity_boxplot.png"), dpi=300)
 
