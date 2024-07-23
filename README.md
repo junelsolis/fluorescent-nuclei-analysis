@@ -32,3 +32,8 @@ Now that the nuclei have been segmented, the label images can be read and constr
 │ IXMtest_A02_s1_w1051DAA7C-7042… ┆ 361920         ┆ 11    ┆ 834.0  ┆ 0.55059      ┆ 113.497475 ┆ 0.964162 │
 └─────────────────────────────────┴────────────────┴───────┴────────┴──────────────┴────────────┴──────────┘
 ```
+The data distributions for nuclear area, aspect ratio, and solidity are shown below. This dataset contains no experimental groupings.
+<img src='https://github.com/user-attachments/assets/06115dfa-a5b8-4aec-8902-72196177b1e3' style="margin: auto; width: 50%;">
+<img src='https://github.com/user-attachments/assets/30a557e3-633d-47e0-a499-6f3bcbfc7bc6' style="margin: auto; width: 50%;">
+<img src='https://github.com/user-attachments/assets/9bcfd098-c8e9-41db-86d5-7766e94a5231' style="margin: auto; width: 50%;">
+
